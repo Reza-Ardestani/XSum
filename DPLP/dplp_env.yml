@@ -1,0 +1,31 @@
+name: dplp_env
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - ca-certificates=2023.05.30=h06a4308_0
+  - certifi=2020.6.20=pyhd3eb1b0_3
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=9.1.0=hdf63c60_0
+  - libstdcxx-ng=9.1.0=hdf63c60_0
+  - ncurses=6.3=h7f8727e_2
+  - pip=19.3.1=py27_0
+  - python=2.7.18=ha1903f6_2
+  - readline=8.1.2=h7f8727e_1
+  - setuptools=44.0.0=py27_0
+  - sqlite=3.38.5=hc218d9a_0
+  - tk=8.6.12=h1ccaba5_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - zlib=1.2.12=h7f8727e_2
+  - pip:
+    - nltk==3.4.5
+    - numpy==1.16.6
+    - protobuf==3.17.3
+    - regex==2021.11.10
+    - scikit-learn==0.20.4
+    - scipy==1.2.3
+    - singledispatch==3.7.0
+    - six==1.16.0
+prefix: /home/gtx/anaconda3/envs/dplp_env
+
