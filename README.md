@@ -57,9 +57,27 @@ Then you can find the output in the "/data/results" path.
 
 ## RST
 ### Notes:
-notes
++ Corenlp.sh requires some jar files from stanfordCoreNLP webpage. These requirements are already downloaded in the provided DPLP.zip file on this repository.
++ You can also run the first part (raw doc to .xml) on a windows machine if you have java installed. The following version of java is compatible on Windows OS. The only thing to do is changing the path to java in corenlp.sh. 
+```
+$ java -version
+java version "20.0.2" 2023-07-18
+Java(TM) SE Runtime Environment (build 20.0.2+9-78)
+Java HotSpot(TM) 64-Bit Server VM (build 20.0.2+9-78, mixed mode, sharing)
+```
++ base and dplp_env are provided in DPLP folder.
+
 ### How to run:
-pipeline
+1. Move files into DPLP/data
+2. (base) In the DPLP directory run “./corenlp.sh ./data” to generate the xlm files. (each .xml file takes around 10 seconds)
+3. (base) in the DPLP directory run “python convert.py ./data” (takes 1 second for 10 documents to generate .conll files from .xml files)
+4. (dplp_env) To generate .merge files form .conll files we need to run “python segmenter.py ./data” in the “DPLP” directory
+5. (dplp_env) From .merge files to .bracket files go to the “DPLP” directory and then run “python rstparser.py ./data” to the get .bracket files in the data folder.
+6. (base) Now you need to run “python separator.py ./DPLP/data” in the home directory which separate the .merge files and .bracket files into two folders.
+7. (base)  create a final_resutl.json file anywhere on your system “rstscr.py” will use it to store the final results (RST_graphs) in it. 
+8. (base) gtx@GTX:~$ python rstscr.py ./DPLP/data/merge_files ./DPLP/data/bracket_files ./final_res.json
+9. Now you have the final result in stored as a dictionary of dicts in final_res.json
+
 
 ## Final Datasets
 The final dataset is the topic of this section.
