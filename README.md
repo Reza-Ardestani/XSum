@@ -18,7 +18,11 @@
 + Without losing the generality of the problem, I have removed '[' and ']' characters from the documents since corenlp.sh fails to properly generate xml files of documents containing those two characters.
 
 ## Server Configuration
-This section covers server configuration.
+I used remote servers of ComputeCanada Alliance and a local server.
++ Local Server Configs:
+  - GPU: 12G NVIDIA TITAN XP. Driver Version: 530.41.03. CUDA version: 12.1
+  - RAM: 64G
+  - OS: UBUNTU 16.04
 
 ## Labeling
 Here, we discuss the labeling process.
