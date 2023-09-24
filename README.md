@@ -13,6 +13,9 @@
   - Train: [7685, 8241, 18941, 34482, 45994, 47375, 51451, 55972, 81764, 93859, 98279, 100515, 111410, 132307, 133278, 137842, 139131, 140449, 161069, 161224, 167620, 167701, 169668, 177000, 183925, 194983, 199290, 200409]
   - Test: [11155]
   - valid: [3834, 5677, 4715, 219, 8445]
++ In case you want to long documents, You need to changed -mx2g to a higher number (like -xm7g). Since I have truncated the documents to have less than 768 BPE tokens I did not need to change the 2 Gbytes jave heapsize to a higher number.
++ Sometimes corenlp.sh does not generate xml file for some documents. In this case you just need to (usually) run that one more time on those documents that where left unprocessed.
++ Without losing the generality of the problem, I have removed '[' and ']' characters from the documents since corenlp.sh fails to properly generate xml files of documents containing those two characters.
 
 ## Server Configuration
 This section covers server configuration.
