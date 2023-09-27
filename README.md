@@ -78,7 +78,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 20.0.2+9-78, mixed mode, sharing)
 ```
 (base) python convert.py ./data
 ```
-4. To generate .merge files form .conll files run the following command in the “DPLP” directory
+4. To generate .merge files form .conll files run the following command in the “DPLP” directory. In case you have already segmented the text into EDUs using a higher accuracy code, You can skip the following command and just add the EDU id of tokens to the .conll file of documents to get .merge files. Some sample conll and .merge and .bracket files are provided in the DPLP folder.
 ```
 (dplp_env)  python segmenter.py ./data
 ```
