@@ -103,6 +103,10 @@ Java HotSpot(TM) 64-Bit Server VM (build 20.0.2+9-78, mixed mode, sharing)
 
 ## Final Datasets
 The final dataset is the topic of this section.
+### Final version of provided processed CNNDM
+sample
+### Final version of processed Xsum
+sample
 
 ## References and acknowledgement
 Taha and Ryia
