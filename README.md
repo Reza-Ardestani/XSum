@@ -86,7 +86,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 20.0.2+9-78, mixed mode, sharing)
 ```
 (dplp_env) python rstparser.py ./data
 ```
-6. Now you need to run the following command in the DPLP directory to separate the .merge files and .bracket files into two folders.
+6. Now you need to run the following command in the DPLP directory to separate the .merge files and .bracket files into two folders. This code simply create two folders (merge_files and bracket_files) and separate files into these two folders.
 ```
 (base) python separator.py ./data
 ```
