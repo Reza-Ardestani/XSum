@@ -68,15 +68,37 @@ Java HotSpot(TM) 64-Bit Server VM (build 20.0.2+9-78, mixed mode, sharing)
 + base and dplp_env are provided in DPLP folder.
 
 ### How to run:
-1. Move files into DPLP/data
-2. (base) In the DPLP directory run “./corenlp.sh ./data” to generate the xlm files. (each .xml file takes around 10 seconds)
-3. (base) in the DPLP directory run “python convert.py ./data” (takes 1 second for 10 documents to generate .conll files from .xml files)
-4. (dplp_env) To generate .merge files form .conll files we need to run “python segmenter.py ./data” in the “DPLP” directory
-5. (dplp_env) From .merge files to .bracket files go to the “DPLP” directory and then run “python rstparser.py ./data” to the get .bracket files in the data folder.
-6. (base) Now you need to run “python separator.py ./DPLP/data” in the home directory which separate the .merge files and .bracket files into two folders.
-7. (base)  create a final_resutl.json file anywhere on your system “rstscr.py” will use it to store the final results (RST_graphs) in it. 
-8. (base) gtx@GTX:~$ python rstscr.py ./DPLP/data/merge_files ./DPLP/data/bracket_files ./final_res.json
-9. Now you have the final result in stored as a dictionary of dicts in final_res.json
+1. Move raw documents into DPLP/data
+
+2. In the DPLP directory run the following command to generate the xlm files. (each .xml file takes around 15 seconds)
+```
+(base) ./corenlp.sh ./data
+```
+3. In the DPLP directory run the following command to generate .conll files (takes 1 mili-second to generate a .conll file from a .xml file)
+```
+(base) python convert.py ./data
+```
+4. To generate .merge files form .conll files run the following command in the “DPLP” directory
+```
+(dplp_env)  python segmenter.py ./data
+```
+5. From .merge files to .bracket files go to the “DPLP” directory and then run the following command to the get .bracket files in the data folder.
+```
+(dplp_env) python rstparser.py ./data
+```
+6. Now you need to run the following command in the DPLP directory to separate the .merge files and .bracket files into two folders.
+```
+(base) python separator.py ./data
+```
+7. Create a final_resutl.json file anywhere on your system (for example in DPLP directory). “rstscr.py” will use it to store the final results (RST_graphs) in it. 
+```
+(base) touch final_rst.json
+```
+8. Run the following command to get the rst graphs.
+```
+(base) python rstscr.py ./data/merge_files ./data/bracket_files ./final_res.json
+```
+9. Now you have the final result in stored as a dictionary in final_res.json
 
 
 ## Final Datasets
@@ -106,7 +128,6 @@ Taha and Ryia
     year = "2020"
 }
 ```
-
 
 ```
 @inproceedings{xu-etal-2020-discourse,
