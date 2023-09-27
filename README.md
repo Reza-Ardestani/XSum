@@ -104,7 +104,18 @@ Java HotSpot(TM) 64-Bit Server VM (build 20.0.2+9-78, mixed mode, sharing)
 ## Final Datasets
 The final dataset is the topic of this section.
 ### Final version of provided processed CNNDM
-sample
+
++ Download files:
+
+     You can download the provided processed CNNDM by Discobert authors from their own cloud storage: 
+  - [https://utexas.app.box.com/v/DiscoBERT-ACL2020](https://utexas.app.box.com/v/DiscoBERT-ACL2020)
+
+    or you can download it from my google drive backup of it:
+  - [https://drive.google.com/drive/folders/1Lm_A4EE1aJzV1s8nVmLuX0fnahSsLMP6?usp=sharing](https://drive.google.com/drive/folders/1Lm_A4EE1aJzV1s8nVmLuX0fnahSsLMP6?usp=sharing)
+ 
++ Some notes:
+  1. Each document has multiple keys dict_keys(['src', 'labels', 'segs', 'clss', 'sent_txt', 'disco_txt', 'tgt_list_str', 'tgt_tok_list_list_str', 'd_labels', 'd_span', 'd_coref', 'd_graph', 'disco_dep', 'doc_id']). But we are only using 'disco_txt', 'd_labels', 'tgt_list_str', 'd_graph'.
+
 ### Final version of processed Xsum
 sample
 
