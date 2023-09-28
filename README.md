@@ -117,8 +117,10 @@ The final dataset is the topic of this section.
   1. Each document has multiple keys dict_keys(['src', 'labels', 'segs', 'clss', 'sent_txt', 'disco_txt', 'tgt_list_str', 'tgt_tok_list_list_str', 'd_labels', 'd_span', 'd_coref', 'd_graph', 'disco_dep', 'doc_id']). But we are only using 'disco_txt', 'd_labels', 'tgt_list_str', 'd_graph'.
 
 ### Final version of processed Xsum
-sample
-
++ Download files [from this link](https://drive.google.com/drive/folders/1bLTZw1E2sSm9LoJFp2ezbbbFgcMx5XAb?usp=sharing)
++ Some notes:
+  - Each document has 4 keys: edu, labels, summary, and graph
+  - graph nodes were initially generated starting from 1. But in the provided data set (above link) they are shifted and start from 0.
 ## References and acknowledgement
 Taha and Ryia
 
