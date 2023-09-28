@@ -122,7 +122,7 @@ The final dataset is the topic of this section.
   - Each document has 4 keys: edu, labels, summary, and graph
   - graph nodes were initially generated starting from 1. But in the provided data set (above link) they are shifted and start from 0.
 ## References and acknowledgement
-Taha and Ryia
+I have had the pleasure of working with two undergraduate internship students (Taha Abbass and Riya Saxena) at our lab with whom we collaborated on some parts of data preprocessing phase.
 
 ```
 @inproceedings{wang2018edu,
