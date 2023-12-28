@@ -1,0 +1,5 @@
+(dplp_env) gtx@GTX:~/DPLP$ python segmenter.py ./tmp/
+Load model from: discoseg/pretrained/model.pickle.gz
+/home/gtx/anaconda3/envs/dplp_env/lib/python2.7/site-packages/sklearn/base.py:253: UserWarning: Trying to unpickle estimator LinearSVC from version pre-0.18 when using version 0.20.4. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+Processing file: ./tmp/1.txt.conll

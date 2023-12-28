@@ -1,0 +1,12 @@
+(dplp_env) gtx@GTX:~/DPLP$ python rstparser.py ./tmp/
+Read files from: ./tmp/
+Load Brown clusters for creating features ...
+Load parsing model ...
+Finish initializing ParsingModel
+/home/gtx/anaconda3/envs/dplp_env/lib/python2.7/site-packages/sklearn/base.py:253: UserWarning: Trying to unpickle estimator LinearSVC from version pre-0.18 when using version 0.20.4. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+Load model from file: model/parsing-model.pickle.gz
+TODO files len:
+1
+./tmp/1.txt_modified.merge
+Writing parsing results into file: ./tmp/1.txt_modified.brackets

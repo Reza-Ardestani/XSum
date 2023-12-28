@@ -1,0 +1,3 @@
+(base) gtx@GTX:~/DPLP$ python convert.py ./tmp
+sys.argv[1] is the path
+Len of files todo 1

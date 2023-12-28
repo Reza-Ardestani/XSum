@@ -1,0 +1,52 @@
+0	1	officers	officer	NNS	nsubj	2	O	 (ROOT (S (NP (NNS officers))	1
+0	2	searched	search	VBD	root	0	O	 (VP (VBD searched)	1
+0	3	properties	property	NNS	nsubj	45	O	 (SBAR (S (NP (NP (NP (NNS properties))	1
+0	4	in	in	IN	case	7	O	 (PP (IN in)	1
+0	5	the	the	DT	det	7	O	 (NP (DT the)	1
+0	6	waterfront	waterfront	NN	compound	7	O	 (NN waterfront)	1
+0	7	park	park	NN	nmod	3	O	 (NN park))))	1
+0	8	and	and	CC	cc	11	O	 (CC and)	1
+0	9	colonsay	colonsay	NN	compound	11	O	 (NP (NP (NP (NN colonsay)	1
+0	10	view	view	NN	compound	11	O	 (NN view)	1
+0	11	areas	area	NNS	conj	3	O	 (NNS areas))	1
+0	12	of	of	IN	case	14	O	 (PP (IN of)	1
+0	13	the	the	DT	det	14	O	 (NP (NP (DT the)	1
+0	14	city	city	NN	nmod	11	O	 (NN city))	1
+0	15	on	on	IN	case	16	O	 (PP (IN on)	1
+0	16	wednesday	wednesday	NNP	nmod	14	DATE	 (NP (NP (NNP wednesday)	1
+0	17	.	.	.	punct	16	O	 (. .))	1
+0	18	detectives	detective	NNS	nsubj	19	O	 (SBAR (S (NP (NNS detectives))	2
+0	19	said	say	VBD	acl:relcl	16	O	 (VP (VBD said)	2
+0	20	three	three	CD	nummod	21	NUMBER	 (SBAR (S (NP (NP (CD three)	3
+0	21	firearms	firearm	NNS	nsubj:pass	33	CRIMINAL_CHARGE	 (NNS firearms))	3
+0	22	,	,	,	punct	21	O	 (, ,)	3
+0	23	ammunition	ammunition	NN	conj	21	O	 (NP (NN ammunition))	3
+0	24	and	and	CC	cc	29	O	 (CC and)	3
+0	25	a	a	DT	det	29	O	 (NP (NP (DT a)	3
+0	26	five	five	CD	nummod	28	NUMBER	 (NML (CD five)	3
+0	27	-	-	HYPH	punct	28	O	 (HYPH -)	3
+0	28	figure	figure	NN	compound	29	O	 (NN figure))	3
+0	29	sum	sum	NN	conj	21	O	 (NN sum))	3
+0	30	of	of	IN	case	31	O	 (PP (IN of)	3
+0	31	money	money	NN	nmod	29	O	 (NP (NN money)))))	3
+0	32	were	be	VBD	aux:pass	33	O	 (VP (VBD were)	3
+0	33	recovered	recover	VBN	ccomp	19	O	 (VP (VBN recovered)))))))))))))	3
+0	34	.	.	.	punct	11	O	 (. .)	3
+0	35	a	a	DT	det	39	O	 (NP (NP (DT a)	4
+0	36	26-year	26-year	NN	dep	38	O	 (ADJP (NP (NN 26-year))	4
+0	37	-	-	HYPH	punct	38	O	 (HYPH -)	4
+0	38	old	old	JJ	amod	39	O	 (JJ old))	4
+0	39	man	man	NN	dep	11	O	 (NN man))	4
+0	40	who	who	WP	nsubj:pass	42	O	 (SBAR (WHNP (WP who))	5
+0	41	was	be	VBD	aux:pass	42	O	 (S (VP (VBD was)	5
+0	42	arrested	arrest	VBN	acl:relcl	39	O	 (VP (VBN arrested)	5
+0	43	and	and	CC	cc	44	O	 (CC and)	5
+0	44	charged	charge	VBN	conj	42	O	 (VBN charged))))))))	5
+0	45	appeared	appear	VBD	ccomp	2	O	 (VP (VBD appeared)	6
+0	46	at	at	IN	case	49	O	 (PP (IN at)	6
+0	47	edinburgh	edinburgh	NNP	compound	49	CITY	 (NP (NNP edinburgh)	6
+0	48	sheriff	sheriff	NN	compound	49	TITLE	 (NN sheriff)	6
+0	49	court	court	NN	obl	45	O	 (NN court)))	6
+0	50	on	on	IN	case	51	O	 (PP (IN on)	6
+0	51	thursday	thursday	NNP	obl	45	DATE	 (NP (NNP thursday)))))))))	6
+
