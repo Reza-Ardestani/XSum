@@ -1,9 +1,13 @@
 # 
 List of content:
-1. Detailed Stats
+1. Notes
+2. Detailed Stats
 
-
-## 1. Detailed stats
+## 1. Notes
++ Don't forget that the generated rst graph in our pipeline is indexed from 1. Later we need to write a simple code to shift all the indices one id back to start from 0. 
++ The output of running each of those phases of the pipeline is also added with "phase-name_terminal_output_redirected.txt" naming format.
+-----
+## 2. Detailed stats
 ~~~
 {'testXsum.json': {'avg_length_of_summaries': 125.39574693373335,
                    'avg_number_of_EDUs': 41.852907438454075,
